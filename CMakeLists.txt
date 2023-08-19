@@ -5,6 +5,8 @@ project(http-server)
 set(SOURCES
     src/main.c
     src/server/server.c
+    src/http/request.c
+    src/http/header.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
