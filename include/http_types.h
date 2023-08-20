@@ -5,3 +5,8 @@ enum http_method {
     GET = 0,
     POST,
 };
+
+enum http_status {
+    OK = 200,
+    NOT_FOUND = 404,
+};

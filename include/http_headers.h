@@ -12,3 +12,4 @@ struct header_node* create_header_list();
 void append_header(struct  header_node* headers, char* name, char* value);
 void free_headers(struct  header_node* headers);
 char* get_header(struct header_node* headers, char* name);
+int get_headers_size(struct header_node* headers);
