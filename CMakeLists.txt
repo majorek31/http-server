@@ -7,6 +7,7 @@ set(SOURCES
     src/server/server.c
     src/http/request.c
     src/http/header.c
+    sc/http/response.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
