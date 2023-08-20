@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     recv(fd, buf, 0x1000, 0);
     struct request_t req = parse_request(buf, 0x1000);
     printf("method: %d file: %s\n", req.method, req.requestedFile);
-    printf("User agent: '%s'\n", get_header(req.headers, "User-Agent")->value);
+    printf("User agent: '%s'\n", get_header(req.headers, "User-Agent"));
     free_headers(req.headers);
     stop_server();
     return 0;

@@ -33,12 +33,12 @@ void free_headers(struct header_node* headers) {
         cur = next;
     }
 }
-struct header_node* get_header(struct header_node* headers, char* name) {
+char* get_header(struct header_node* headers, char* name) {
     struct header_node* cur = headers;
     while (cur != NULL)
     {
         if (!strcmp(cur->name, name))
-            return cur;
+            return cur->value;
         cur = cur->next;
     }
 }

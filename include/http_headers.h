@@ -11,4 +11,4 @@ struct header_node
 struct header_node* create_header_list();
 void append_header(struct  header_node* headers, char* name, char* value);
 void free_headers(struct  header_node* headers);
-struct header_node* get_header(struct header_node* headers, char* name);
+char* get_header(struct header_node* headers, char* name);
